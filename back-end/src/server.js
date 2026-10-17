@@ -40,7 +40,7 @@ app.get('/health', (req, res) => {
   res.json({ status: 'ok' });
 });
 
-app.use(express.static(path.resolve(__dirname, '../../frontend')));
+app.use(express.static(path.resolve(__dirname, '../../front-end')));
 
 app.use((error, req, res, next) => {
   console.error('[error]', error);
